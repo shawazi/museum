@@ -20,6 +20,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -45,6 +47,8 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.26",
-    "styled-components": "^5.3.6"
+    "gh-pages": "^5.0.0",
+    "styled-components": "^5.3.6",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
